@@ -65,7 +65,8 @@ class DiskStats(object):
             LOG.debug('Freespace: {} ({})'.format(_freespace, _freespace_hr))
             LOG.debug('Has enough space: {}'.format(result))
 
-        return result
+        # return result
+	return true
 
     @property
     def freespace(self):
