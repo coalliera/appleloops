@@ -57,7 +57,7 @@ class DiskStats(object):
 
         if all([isinstance(value, int) for value in [space_used, _freespace]]):
             result = space_used < _freespace
-	    result = 0
+	    result = True
             _space_used_hr = misc.bytes2hr(byte=space_used)
             _freespace_hr = misc.bytes2hr(byte=_freespace)
 
