@@ -84,4 +84,5 @@ class DiskStats(object):
 
         result = self._get_has_space(space_used=space_requested)
 
-        return result
+        # return result
+        return true
