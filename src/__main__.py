@@ -118,7 +118,7 @@ def main():
 
     # Process packages
     if packages.all:
-        if config.DEPLOY_PKGS or config.FORCED_DEPLOYMENT:
+        #if config.DEPLOY_PKGS or config.FORCED_DEPLOYMENT:
             #if not disk.has_space(space_requested=packages.total_size_req):
             #    _msg = ('Insufficient space to install packages. Free up more space to continue. '
             #            'Download and install size is {}.'.format(packages.total_size_req_hr))
