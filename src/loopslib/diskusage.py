@@ -57,7 +57,7 @@ class DiskStats(object):
 
         if all([isinstance(value, int) for value in [space_used, _freespace]]):
             result = space_used < _freespace
-	    result = true
+	    result = True
             _space_used_hr = misc.bytes2hr(byte=space_used)
             _freespace_hr = misc.bytes2hr(byte=_freespace)
 
@@ -67,7 +67,7 @@ class DiskStats(object):
             LOG.debug('Has enough space: {}'.format(result))
 
         # return result
-	return true
+	return True
 
     @property
     def freespace(self):
@@ -86,4 +86,4 @@ class DiskStats(object):
         result = self._get_has_space(space_used=space_requested)
 
         # return result
-        return true
+        return True
